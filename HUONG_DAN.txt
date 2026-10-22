@@ -1,0 +1,3 @@
+PHI HÀNH GIA TOÁN HỌC AI V19 - GIAO DIỆN TRÒ CHƠI DỄ NHÌN
+Giải nén ZIP và mở index.html bằng Chrome hoặc Edge trên Windows.
+V19 thu nhỏ minh họa phi thuyền, làm nổi bật câu hỏi và đáp án, chọn đáp án có viền vàng; giữ dữ liệu và chức năng V18.
