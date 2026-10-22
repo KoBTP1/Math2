@@ -7054,7 +7054,7 @@
       <section class="panel" id="home">
         <div aria-label="Bản đồ phi hành gia Toán học Lớp 2 3D" class="v12-art" role="region">
           <header class="top" id="mainHeader">
-      <div class="brand">🚀 PHI HÀNH GIA TOÁN HỌC AI <small>Khám phá vũ trụ · Chinh phục Toán học · Lớp 2</small>
+      <div class="brand">🚀 PHI HÀNH GIA<br>TOÁN HỌC AI <small>Khám phá vũ trụ · Chinh phục Toán học · Lớp 2</small>
       </div>
       <nav class="nav"><button class="btn active" data-page="home">🏠 Trang chủ</button><button class="btn"
           data-page="map">🪐 Hành tinh</button><button class="btn" data-page="games">🎮 Trò chơi</button><button
@@ -7062,6 +7062,9 @@
           viên</button><button class="btn" id="voice">🔊 Giọng đọc bật</button><span class="voice-status"
           id="voiceStatus" title="Giọng đọc phụ thuộc giọng đã cài trong Windows"></span></nav>
     </header>
+          <div class="v12-home-logo-wrap" title="Logo Bộ sách Kết nối tri thức với cuộc sống">
+            <img src="logo.png" alt="Logo Kết nối tri thức với cuộc sống">
+          </div>
           <div aria-hidden="true" class="v12-art-image"></div>
           
           
@@ -9704,6 +9707,85 @@ gl_FragColor=vec4(pow(col,vec3(.9)),1.);}`;
     })();
   </script>
   
+  <style>
+    /* ========================================================= */
+    /* KHẮC PHỤC CĂN LỆCH KHI BẬT/TẮT GIỌNG ĐỌC & LOGO TRANG CHỦ */
+    /* ========================================================= */
+    
+    /* 1. Nút Giọng đọc: Chiều rộng cố định và căn giữa chuẩn xác */
+    #voice,
+    button#voice.btn {
+      width: 150px !important;
+      min-width: 150px !important;
+      max-width: 150px !important;
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      text-align: center !important;
+      white-space: nowrap !important;
+      box-sizing: border-box !important;
+      flex-shrink: 0 !important;
+    }
+
+    /* 2. Ẩn văn bản trạng thái giọng đọc trong thanh nav để tránh bẻ dòng làm lệch giao diện */
+    .voice-status {
+      display: none !important;
+    }
+
+    /* 3. Tiêu đề thương hiệu: Cố định dòng, tránh giật chữ khi giao diện co giãn */
+    header.top .brand,
+    .v12-art header.top .brand {
+      line-height: 1.15 !important;
+      flex-shrink: 0 !important;
+    }
+
+    /* 4. Huy hiệu Logo chuẩn SGK ngay bên dưới thanh nav ở trang chủ */
+    .v12-home-logo-wrap {
+      position: absolute;
+      top: 155px;
+      left: 20px;
+      z-index: 15;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #ffffff;
+      border: 2.5px solid #ffda55;
+      border-radius: 18px;
+      padding: 6px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.55), 0 0 15px rgba(255, 218, 85, 0.35);
+      backdrop-filter: blur(8px);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      cursor: default;
+      user-select: none;
+    }
+
+    .v12-home-logo-wrap:hover {
+      transform: translateY(-2px) scale(1.04);
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.65), 0 0 20px rgba(255, 218, 85, 0.5);
+    }
+
+    .v12-home-logo-wrap img {
+      height: 90px;
+      width: 90px;
+      object-fit: contain;
+      border-radius: 14px;
+      display: block;
+      background: #ffffff;
+    }
+
+    @media (max-width: 768px) {
+      .v12-home-logo-wrap {
+        top: auto !important;
+        bottom: 24% !important;
+        left: 14px !important;
+        padding: 3px !important;
+      }
+      .v12-home-logo-wrap img {
+        height: 50px !important;
+        width: 50px !important;
+      }
+    }
+  </style>
 </body>
 
 </html>
