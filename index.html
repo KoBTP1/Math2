@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="vi">
 
@@ -2079,27 +2079,34 @@
     body.page-home header.top,
     .v12-art header.top,
     body:not(:has(#home.hidden)) header.top {
+      position: absolute !important;
       top: 14px !important;
       left: 16px !important;
       right: 16px !important;
+      width: auto !important;
       max-width: calc(100% - 32px) !important;
-      padding: 10px 18px !important;
+      box-sizing: border-box !important;
+      padding: 12px 20px !important;
+      min-height: 70px !important;
       height: auto !important;
       display: flex !important;
       align-items: center !important;
       justify-content: space-between !important;
-      border-radius: 16px !important;
-      background: rgba(6, 18, 54, 0.82) !important;
+      gap: 12px !important;
+      border-radius: 20px !important;
+      background: rgba(6, 18, 54, 0.85) !important;
       backdrop-filter: blur(12px) !important;
       -webkit-backdrop-filter: blur(12px) !important;
-      border: 1.5px solid rgba(135, 206, 250, 0.8) !important;
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6) !important;
+      border: 3px solid #5ec5fc !important;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6), 0 0 16px rgba(94, 197, 252, 0.35) !important;
+      margin: 0 !important;
       z-index: 30 !important;
     }
     body.page-home header.top .brand,
     .v12-art header.top .brand {
       display: block !important;
-      font-size: 14px !important;
+      font-size: clamp(20px, 2.5vw, 26px) !important;
+      font-weight: 1000 !important;
       color: #ffffff !important;
       text-shadow: 0 2px 4px rgba(0,0,0,0.8), 0 0 10px rgba(92, 195, 255, 0.8) !important;
     }
@@ -2107,9 +2114,23 @@
     .v12-art header.top .brand small {
       display: block !important;
       color: #cce7ff !important;
-      font-size: 11px !important;
-      font-weight: 500 !important;
+      font-size: 12px !important;
+      font-weight: 600 !important;
       text-shadow: 0 1px 2px rgba(0,0,0,0.8) !important;
+    }
+    body.page-home header.top .nav,
+    .v12-art header.top .nav {
+      display: flex !important;
+      flex-wrap: wrap !important;
+      align-items: center !important;
+      gap: 8px !important;
+    }
+    body.page-home header.top .nav .btn,
+    .v12-art header.top .nav .btn {
+      padding: 11px 16px !important;
+      font-size: 14.5px !important;
+      font-weight: 850 !important;
+      border-radius: 15px !important;
     }
 
     /* === 6 HÀNH TINH TO HƠN VÀ QUAY GẦN MẶT TRỜI TRÊN BANNER MỚI === */
@@ -4195,21 +4216,23 @@
     body:not(:has(#home.hidden)) header.top {
       display: flex !important;
       position: absolute !important;
-      top: 16px !important;
-      left: 18px !important;
-      right: 18px !important;
+      top: 14px !important;
+      left: 16px !important;
+      right: 16px !important;
       width: auto !important;
-      max-width: calc(100% - 36px) !important;
+      max-width: calc(100% - 32px) !important;
       box-sizing: border-box !important;
-      z-index: 20 !important;
-      background: rgba(8, 22, 60, 0.78) !important;
+      z-index: 30 !important;
+      background: rgba(6, 18, 54, 0.85) !important;
       backdrop-filter: blur(12px) !important;
       -webkit-backdrop-filter: blur(12px) !important;
-      border: 2px solid rgba(130, 210, 255, 0.8) !important;
-      border-radius: 16px !important;
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6), 0 0 20px rgba(70, 160, 255, 0.25) !important;
+      border: 3px solid #5ec5fc !important;
+      border-radius: 20px !important;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6), 0 0 16px rgba(94, 197, 252, 0.35) !important;
       margin: 0 !important;
-      padding: 10px 18px !important;
+      padding: 12px 20px !important;
+      min-height: 70px !important;
+      gap: 12px !important;
     }
 
     body.page-home header.top .brand,
@@ -7112,21 +7135,23 @@
     .v12-art header.top,
     body.page-home header.top {
       position: absolute !important;
-      top: 16px !important;
-      left: 18px !important;
-      right: 18px !important;
+      top: 14px !important;
+      left: 16px !important;
+      right: 16px !important;
       width: auto !important;
-      max-width: calc(100% - 36px) !important;
+      max-width: calc(100% - 32px) !important;
       box-sizing: border-box !important;
-      z-index: 20 !important;
-      background: rgba(6, 18, 54, 0.78) !important;
+      z-index: 30 !important;
+      background: rgba(6, 18, 54, 0.85) !important;
       backdrop-filter: blur(12px) !important;
       -webkit-backdrop-filter: blur(12px) !important;
-      border: 2px solid rgba(135, 206, 250, 0.8) !important;
-      border-radius: 16px !important;
+      border: 3px solid #5ec5fc !important;
+      border-radius: 20px !important;
       margin: 0 !important;
-      padding: 10px 18px !important;
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6) !important;
+      padding: 12px 20px !important;
+      min-height: 70px !important;
+      gap: 12px !important;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6), 0 0 16px rgba(94, 197, 252, 0.35) !important;
     }
 
     .v12-art header.top .brand {
@@ -7475,7 +7500,7 @@
           <div class="v12-home-logo-wrap" title="Logo Bộ sách Kết nối tri thức với cuộc sống">
             <img src="logo.png" alt="Logo Kết nối tri thức với cuộc sống">
           </div>
-          <div aria-hidden="true" class="v12-art-image"></div>
+          <div class="v12-art-image" onclick="show('map')" title="Khám phá Hành tinh Toán học"></div>
           
           
           <!-- 6 HÀNH TINH TƯƠNG TÁC TỰ DO TRÊN QUỸ ĐẠO KHÔNG GIAN -->
@@ -10377,15 +10402,94 @@ gl_FragColor=vec4(pow(col,vec3(.9)),1.);}`;
     }
 
     @media (max-width: 768px) {
-      .v12-home-logo-wrap {
-        top: auto !important;
-        bottom: 24% !important;
-        left: 14px !important;
-        padding: 3px !important;
+      /* 1. Tối ưu trang chủ trên điện thoại: ẩn cụm 6 hành tinh để không rối mắt */
+      #bannerPlanetsOrbit {
+        display: none !important;
       }
-      .v12-home-logo-wrap img {
-        height: 50px !important;
-        width: 50px !important;
+
+      /* 2. Khung trang chủ: xếp dọc (flex-column) nav ở trên, banner trọn vẹn ở dưới */
+      .v12-art {
+        display: flex !important;
+        flex-direction: column !important;
+        aspect-ratio: auto !important;
+        overflow: visible !important;
+        background: transparent !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+        gap: 12px !important;
+      }
+
+      /* 3. Thanh nav trên điện thoại: gọn gàng, nút bấm to vừa vặn dễ chạm */
+      body.page-home header.top,
+      .v12-art header.top {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 10px 14px !important;
+        min-height: auto !important;
+        border-radius: 18px !important;
+        border: 2.5px solid #5ec5fc !important;
+        background: rgba(6, 18, 54, 0.92) !important;
+        box-sizing: border-box !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 8px !important;
+      }
+
+      body.page-home header.top .brand,
+      .v12-art header.top .brand {
+        font-size: 17px !important;
+        text-align: center !important;
+        width: 100% !important;
+        line-height: 1.25 !important;
+      }
+
+      body.page-home header.top .brand small,
+      .v12-art header.top .brand small {
+        font-size: 11px !important;
+        margin-top: 2px !important;
+      }
+
+      body.page-home header.top .nav,
+      .v12-art header.top .nav {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 6px !important;
+        width: 100% !important;
+      }
+
+      body.page-home header.top .nav .btn,
+      .v12-art header.top .nav .btn {
+        padding: 8px 10px !important;
+        font-size: 12.5px !important;
+        border-radius: 12px !important;
+        flex: 1 1 calc(33.333% - 6px) !important;
+        min-width: 82px !important;
+        text-align: center !important;
+      }
+
+      /* 4. Ảnh bìa banner hiển thị toàn vẹn, sắc nét, không bị che khuất */
+      .v12-art-image {
+        position: relative !important;
+        inset: auto !important;
+        width: 100% !important;
+        aspect-ratio: 1376 / 768 !important;
+        border-radius: 18px !important;
+        overflow: hidden !important;
+        box-shadow: 0 8px 25px rgba(10, 25, 75, 0.5) !important;
+        border: 2.5px solid #5ec5fc !important;
+        background-size: 100% 100% !important;
+        cursor: pointer !important;
+      }
+
+      .v12-home-logo-wrap {
+        display: none !important;
       }
     }
   </style>
